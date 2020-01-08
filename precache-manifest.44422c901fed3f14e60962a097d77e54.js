@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3cd1c5e5e9014077ce71",
-    "url": "/css/app.4ae7cacb.css"
+    "revision": "aab4355d75b2ff215c48",
+    "url": "/css/app.2ef1e21c.css"
   },
   {
-    "revision": "3cd1c5e5e9014077ce71",
-    "url": "/js/app.f027e0e6.js"
+    "revision": "aab4355d75b2ff215c48",
+    "url": "/js/app.349287cd.js"
   },
   {
     "revision": "d949dbdc9bb47edde9ea",
@@ -20,12 +20,16 @@ self.__precacheManifest = [
     "url": "/fonts/BebasNeueLight.31fc2f5a.woff2"
   },
   {
-    "revision": "06aaf0650d6979e007a349a167a84ff1",
-    "url": "/fonts/BebasNeueRegular.06aaf065.woff"
+    "revision": "1a94b961f22e6a98bae150a99d9c6093",
+    "url": "/fonts/BebasNeueLight.1a94b961.woff"
   },
   {
     "revision": "bf31fc3b9bc2a17797d3c5d1155b0628",
     "url": "/fonts/BebasNeueRegular.bf31fc3b.woff2"
+  },
+  {
+    "revision": "06aaf0650d6979e007a349a167a84ff1",
+    "url": "/fonts/BebasNeueRegular.06aaf065.woff"
   },
   {
     "revision": "1dfa6176bd4c6fc268edc2ef2158e5d8",
@@ -50,10 +54,6 @@ self.__precacheManifest = [
   {
     "revision": "9d5110acc3bea93fd3bd3ec7fbc2c50a",
     "url": "/fonts/Roboto-Medium.9d5110ac.woff"
-  },
-  {
-    "revision": "1a94b961f22e6a98bae150a99d9c6093",
-    "url": "/fonts/BebasNeueLight.1a94b961.woff"
   },
   {
     "revision": "85c27992df8fd3bb4342234a07c6b593",
@@ -156,7 +156,7 @@ self.__precacheManifest = [
     "url": "/img/porto (5).1564a9f3.png"
   },
   {
-    "revision": "5388e20157cdd88c896c49d063c8015b",
+    "revision": "240b479814cf2d255bb50f1ff49438a0",
     "url": "/index.html"
   },
   {
