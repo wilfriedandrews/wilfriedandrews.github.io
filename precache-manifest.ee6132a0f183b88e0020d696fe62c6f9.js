@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "aab4355d75b2ff215c48",
-    "url": "/css/app.2ef1e21c.css"
+    "revision": "ffccafa7ef88e193aced",
+    "url": "/css/app.b08b3958.css"
   },
   {
-    "revision": "aab4355d75b2ff215c48",
-    "url": "/js/app.349287cd.js"
+    "revision": "ffccafa7ef88e193aced",
+    "url": "/js/app.37db49ed.js"
   },
   {
     "revision": "d949dbdc9bb47edde9ea",
@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/fonts/BebasNeueBook.1dfa6176.woff2"
   },
   {
-    "revision": "80f3a30e8411eae9a2be3fb605c2337d",
-    "url": "/fonts/BebasNeueBook.80f3a30e.woff"
-  },
-  {
     "revision": "06a22213f618c5c815b95e93cea03276",
     "url": "/fonts/BebasNeueBold.06a22213.woff2"
+  },
+  {
+    "revision": "80f3a30e8411eae9a2be3fb605c2337d",
+    "url": "/fonts/BebasNeueBook.80f3a30e.woff"
   },
   {
     "revision": "a31dd45e52275fa04ce435828e4abb4b",
@@ -156,7 +156,7 @@ self.__precacheManifest = [
     "url": "/img/porto (5).1564a9f3.png"
   },
   {
-    "revision": "240b479814cf2d255bb50f1ff49438a0",
+    "revision": "5704c567a827fd266d7eefc565a07bf9",
     "url": "/index.html"
   },
   {
