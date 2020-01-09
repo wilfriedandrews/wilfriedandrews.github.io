@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.ee6132a0f183b88e0020d696fe62c6f9.js"
+  "/precache-manifest.044992fe2a414c26baa6cf579b365a82.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "black-project"});
