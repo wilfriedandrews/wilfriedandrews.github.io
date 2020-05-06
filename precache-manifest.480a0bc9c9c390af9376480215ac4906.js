@@ -1,39 +1,43 @@
 self.__precacheManifest = [
   {
-    "revision": "01e454dc74ee64a8fdad",
-    "url": "/css/app.442e49d1.css"
+    "revision": "e955177b870e3a96be3b",
+    "url": "/css/app.6628e158.css"
   },
   {
-    "revision": "01e454dc74ee64a8fdad",
-    "url": "/js/app.570de6f1.js"
+    "revision": "e955177b870e3a96be3b",
+    "url": "/js/app.db30f4d9.js"
   },
   {
-    "revision": "d949dbdc9bb47edde9ea",
-    "url": "/js/chunk-vendors.b5db1953.js"
+    "revision": "0d70a7a6f7df865090a8",
+    "url": "/js/chunk-vendors.703722c8.js"
   },
   {
     "revision": "5d1c8c1fe7341d7da0f1831e236f2ce9",
     "url": "/img/porto (1).5d1c8c1f.jpg"
   },
   {
-    "revision": "1a94b961f22e6a98bae150a99d9c6093",
-    "url": "/fonts/BebasNeueLight.1a94b961.woff"
+    "revision": "31fc2f5a30e8cf0d815570941bd0d5a2",
+    "url": "/fonts/BebasNeueLight.31fc2f5a.woff2"
   },
   {
     "revision": "06aaf0650d6979e007a349a167a84ff1",
     "url": "/fonts/BebasNeueRegular.06aaf065.woff"
   },
   {
-    "revision": "31fc2f5a30e8cf0d815570941bd0d5a2",
-    "url": "/fonts/BebasNeueLight.31fc2f5a.woff2"
-  },
-  {
     "revision": "bf31fc3b9bc2a17797d3c5d1155b0628",
     "url": "/fonts/BebasNeueRegular.bf31fc3b.woff2"
   },
   {
-    "revision": "1dfa6176bd4c6fc268edc2ef2158e5d8",
-    "url": "/fonts/BebasNeueBook.1dfa6176.woff2"
+    "revision": "1a94b961f22e6a98bae150a99d9c6093",
+    "url": "/fonts/BebasNeueLight.1a94b961.woff"
+  },
+  {
+    "revision": "a31dd45e52275fa04ce435828e4abb4b",
+    "url": "/fonts/BebasNeueBold.a31dd45e.woff"
+  },
+  {
+    "revision": "ecf2d1f2a75c0b59b03364ec1656066e",
+    "url": "/fonts/Roboto-Regular.ecf2d1f2.woff"
   },
   {
     "revision": "80f3a30e8411eae9a2be3fb605c2337d",
@@ -44,12 +48,8 @@ self.__precacheManifest = [
     "url": "/fonts/BebasNeueBold.06a22213.woff2"
   },
   {
-    "revision": "a31dd45e52275fa04ce435828e4abb4b",
-    "url": "/fonts/BebasNeueBold.a31dd45e.woff"
-  },
-  {
-    "revision": "ecf2d1f2a75c0b59b03364ec1656066e",
-    "url": "/fonts/Roboto-Regular.ecf2d1f2.woff"
+    "revision": "1dfa6176bd4c6fc268edc2ef2158e5d8",
+    "url": "/fonts/BebasNeueBook.1dfa6176.woff2"
   },
   {
     "revision": "9d5110acc3bea93fd3bd3ec7fbc2c50a",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/img/porto (5).1564a9f3.png"
   },
   {
-    "revision": "d261c51ae33ac7f9e0409843e608e447",
+    "revision": "545eb456a49abb50cb7d7b7f978addcb",
     "url": "/index.html"
   },
   {
