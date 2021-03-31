@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+    }
+    .wa-abs{
+      position: absolute;
+    }
+    .w-100{
+      width: 100%;
+    }
+    .luckywheel_section{
+      background-image: url("assets/background_lw.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+    }
+    .content_group{
+      margin: auto;
+      margin-top: 100px;
+    }
+    .content_group a{
+      text-decoration: none;
+    }
+    .content_group a:active > .button_custom{
+      transform: scale(0.7);
+      transition-duration: .7s;
+    }
+    .wheel_container{
+      position: relative;
+      width: 300px;
+      height: 400px;
+      border: 2px solid red;
+    }
+    .stand{
+      bottom: 0;
+    }
+    .stand_icon{
+      width: 100%;
+    }
+    .wheel{
+      top: 8%;
+    }
+    .wheel_icon{
+      width: 100%;
+    }
+    .needle{
+      top: 0;
+      right: 0;
+    }
+    .needle_icon{
+      width: 130px;
+      float: right;
+    }
+    .button_custom{
+      background-image: url("assets/button.png");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: auto;
+      width: 50%;
+      height: 55px;
+      display: flex;
+      transition-duration: .7s;
+    }
+    .button_label{
+      margin: auto;
+    }
+    /* --------------------------modal */
+    .modal{
+      position: fixed;
+      background-color: rgba(0,0,0,0.5);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      visibility: hidden;
+    }
+    .modal__container{
+      background-color: white;
+      padding: 30px;
+      margin: auto;
+    }
+    .spin{
+      transform: rotate(1970deg);
+      transition: cubic-bezier(.27,.81,.67,.9);
+      transition-duration: 5s;
+      /* animation: spin 9s cubic-bezier(.27,.81,.67,.9);; */
+    }
+  </style>
+</head>
+<body>
+  <div class="luckywheel_section">
+    <div class="content_group">
+      <div class="wheel_container">
+        <div class="wa-abs stand"><img class="stand_icon" src="assets/stand.png"/></div>
+        <div id="luckywheel" class="wa-abs wheel"><img class="wheel_icon" src="assets/wheel.png"/></div>
+        <div class="wa-abs needle"><img class="needle_icon" src="assets/needle.png"/></div>
+      </div>
+      <a href="#"  onclick="spin()" class="button_container">
+          <div class="button_custom"><span class="button_label">Spin the wheel</span></div>
+      </a>
+    </div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal__container">
+      <div class="modal__box">
+        taa... daaa.....
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function spin(){
+      document.getElementById("luckywheel").classList.add("spin");
+      setInterval(() => {
+        document.getElementById("modal").style.visibility="visible";
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
