@@ -26,6 +26,7 @@
       background-repeat: no-repeat;
       height: 100vh;
       display: flex;
+      overflow: hidden;
     }
     .overlay{
       background-image: url("assets/overlay.png");
@@ -143,8 +144,11 @@
       /* animation: spin 9s cubic-bezier(.27,.81,.67,.9);; */
     }
     .popcorn_container{
-      position: relative;
-      height: 100vh;
+      position: absolute;
+      top: -10%;
+      left: 0;
+      width: 100%;
+      height: 20vh;
     }
     .popcorn{
       width: 30px;
@@ -194,24 +198,24 @@
           <div class="button_custom"><span class="button_label">Keluar</span></div>
       </div>
     </div>
-  </div>
-  <div class="popcorn_container">
-    <img id="popcorn_1" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_1">
-    <img id="popcorn_2" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_2">
-    <img id="popcorn_3" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_3">
-    <img id="popcorn_4" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_4">
-    <img id="popcorn_5" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_5">
-    <img id="popcorn_6" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_6">
-    <img id="popcorn_7" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_7">
-    <img id="popcorn_8" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_8">
-    <img id="popcorn_9" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_9">
-    <img id="popcorn_10" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_10">
-    <img id="popcorn_11" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_11">
-    <img id="popcorn_12" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_12">
-    <img id="popcorn_13" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_13">
-    <img id="popcorn_14" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_14">
-    <img id="popcorn_15" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_15">
-    <img id="popcorn_16" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_16">
+    <div class="popcorn_container">
+      <img id="popcorn_1" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_1">
+      <img id="popcorn_2" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_2">
+      <img id="popcorn_3" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_3">
+      <img id="popcorn_4" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_4">
+      <img id="popcorn_5" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_5">
+      <img id="popcorn_6" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_6">
+      <img id="popcorn_7" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_7">
+      <img id="popcorn_8" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_8">
+      <img id="popcorn_9" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_9">
+      <img id="popcorn_10" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_10">
+      <img id="popcorn_11" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_11">
+      <img id="popcorn_12" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_12">
+      <img id="popcorn_13" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_13">
+      <img id="popcorn_14" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_14">
+      <img id="popcorn_15" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_15">
+      <img id="popcorn_16" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_16">
+    </div>
   </div>
   <div id="modal" class="modal">
     <div class="modal__container">
