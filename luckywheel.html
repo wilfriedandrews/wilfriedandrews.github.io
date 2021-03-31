@@ -16,6 +16,9 @@
     .w-100{
       width: 100%;
     }
+    .wa-hidden{
+      visibility: hidden!important;
+    }
     .luckywheel_section{
       background-image: url("assets/background_lw.png");
       background-position: center;
@@ -24,16 +27,36 @@
       height: 100vh;
       display: flex;
     }
+    .overlay{
+      background-image: url("assets/overlay.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* height: 100vh; */
+      /* display: flex; */
+    }
+    .img_overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      opacity: 0;
+      z-index: -1;
+    }
     .content_group{
       margin: auto;
       margin-top: 100px;
     }
     .content_group a{
       text-decoration: none;
-    }
-    .content_group a:active > .button_custom{
-      transform: scale(0.7);
-      transition-duration: .7s;
     }
     .wheel_container{
       position: relative;
@@ -61,6 +84,26 @@
       width: 130px;
       float: right;
     }
+
+    .greeting{
+      top: -7%;
+    }
+    .greeting_title{
+      text-align: center;
+      top: 43%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .text_primary{
+      font-size: 30px;
+    }
+    .text_secondary{
+      font-size: 30px;
+    }
+    .button_container:active > .button_custom{
+      transform: scale(0.7);
+      transition-duration: .7s;
+    }
     .button_custom{
       background-image: url("assets/button.png");
       background-size: 100%;
@@ -74,6 +117,8 @@
     }
     .button_label{
       margin: auto;
+      font-weight: bold;
+      color: #2265B0;
     }
     /* --------------------------modal */
     .modal{
@@ -97,20 +142,76 @@
       transition-duration: 5s;
       /* animation: spin 9s cubic-bezier(.27,.81,.67,.9);; */
     }
+    .popcorn_container{
+      position: relative;
+      height: 100vh;
+    }
+    .popcorn{
+      width: 30px;
+    }
+    .popcorn_1{left: 0%;transition-duration: 0.8s;}
+    .popcorn_2{left: 10%;transition-duration: 0.6s;}
+    .popcorn_3{left: 15%;transition-duration: 1s;}
+    .popcorn_4{left: 20%;transition-duration: 1.2s;}
+    .popcorn_5{left: 25%;transition-duration: 0.6s;}
+    .popcorn_6{left: 30%;transition-duration: 0.4s;}
+    .popcorn_7{left: 35%;transition-duration: 0.9s;}
+    .popcorn_8{left: 40%;transition-duration: 1.2s;}
+    .popcorn_9{left: 50%;transition-duration: 0.5s;}
+    .popcorn_10{right: 55%;transition-duration: 0.9s;}
+    .popcorn_11{right: 45%;transition-duration: 1.2s;}
+    .popcorn_12{right: 40%;transition-duration: 1.2s;}
+    .popcorn_13{right: 35%;transition-duration: 1.5s;}
+    .popcorn_14{right: 30%;transition-duration: 1.8s;}
+    .popcorn_15{right: 20%;transition-duration: 0.9s;}
+    .popcorn_16{right: 10%;transition-duration: 0.7s;}
+    .fall{
+      transform: translateY(4000%);
+      transition-duration: 4s;
+    }
   </style>
 </head>
 <body>
-  <div class="luckywheel_section">
+  <div id="luckywheel_section" class="luckywheel_section">
+    <!-- <img id="img_overlay" src="assets/overlay.png" class="img_overlay"/> -->
     <div class="content_group">
       <div class="wheel_container">
         <div class="wa-abs stand"><img class="stand_icon" src="assets/stand.png"/></div>
         <div id="luckywheel" class="wa-abs wheel"><img class="wheel_icon" src="assets/wheel.png"/></div>
         <div class="wa-abs needle"><img class="needle_icon" src="assets/needle.png"/></div>
+        
+        <!-- winning -->
+        <div id="greeting" class="wa-hidden wa-abs greeting"><img class="wheel_icon" src="assets/greeting.png"/></div>
+        <div id="greeting_title" class="wa-hidden wa-abs greeting_title">
+          <div class="text_secondary">Kamu Mendapatkan</div>
+          <div class="text_primary">Tiket Nonton Gratis</div>
+        </div>
       </div>
-      <a href="#"  onclick="spin()" class="button_container">
+      <div id="button_spin" onclick="spin()" class="button_container">
           <div class="button_custom"><span class="button_label">Spin the wheel</span></div>
-      </a>
+      </div>
+      <div id="button_out" onclick="spin()" class=" wa-hidden button_container">
+          <div class="button_custom"><span class="button_label">Keluar</span></div>
+      </div>
     </div>
+  </div>
+  <div class="popcorn_container">
+    <img id="popcorn_1" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_1">
+    <img id="popcorn_2" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_2">
+    <img id="popcorn_3" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_3">
+    <img id="popcorn_4" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_4">
+    <img id="popcorn_5" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_5">
+    <img id="popcorn_6" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_6">
+    <img id="popcorn_7" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_7">
+    <img id="popcorn_8" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_8">
+    <img id="popcorn_9" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_9">
+    <img id="popcorn_10" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_10">
+    <img id="popcorn_11" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_11">
+    <img id="popcorn_12" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_12">
+    <img id="popcorn_13" src="assets/popcorn1.png" class="wa-abs popcorn popcorn_13">
+    <img id="popcorn_14" src="assets/popcorn2.png" class="wa-abs popcorn popcorn_14">
+    <img id="popcorn_15" src="assets/popcorn3.png" class="wa-abs popcorn popcorn_15">
+    <img id="popcorn_16" src="assets/popcorn4.png" class="wa-abs popcorn popcorn_16">
   </div>
   <div id="modal" class="modal">
     <div class="modal__container">
@@ -124,7 +225,30 @@
     function spin(){
       document.getElementById("luckywheel").classList.add("spin");
       setInterval(() => {
-        document.getElementById("modal").style.visibility="visible";
+        // document.getElementById("modal").style.visibility="visible";
+        document.getElementById("luckywheel_section").classList.add("overlay");
+        document.getElementById("greeting").classList.remove("wa-hidden");
+        document.getElementById("greeting_title").classList.remove("wa-hidden");
+        document.getElementById("button_out").classList.remove("wa-hidden");
+        document.getElementById("button_spin").classList.add("wa-hidden");
+        document.getElementById("popcorn_1").classList.add("fall");
+        document.getElementById("popcorn_2").classList.add("fall");
+        document.getElementById("popcorn_3").classList.add("fall");
+        document.getElementById("popcorn_4").classList.add("fall");
+        document.getElementById("popcorn_5").classList.add("fall");
+        document.getElementById("popcorn_6").classList.add("fall");
+        document.getElementById("popcorn_7").classList.add("fall");
+        document.getElementById("popcorn_8").classList.add("fall");
+        document.getElementById("popcorn_9").classList.add("fall");
+        document.getElementById("popcorn_10").classList.add("fall");
+        document.getElementById("popcorn_11").classList.add("fall");
+        document.getElementById("popcorn_12").classList.add("fall");
+        document.getElementById("popcorn_13").classList.add("fall");
+        document.getElementById("popcorn_14").classList.add("fall");
+        document.getElementById("popcorn_15").classList.add("fall");
+        document.getElementById("popcorn_16").classList.add("fall");
+
+
       }, 5000);
     }
   </script>
