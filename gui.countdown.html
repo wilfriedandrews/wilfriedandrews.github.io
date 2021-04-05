@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+    }
+    .wa-abs{
+      position: absolute;
+    }
+    .w-100{
+      width: 100%;
+    }
+    .wa-hidden{
+      visibility: hidden!important;
+    }
+    .m-auto{
+      margin: auto;
+    }
+    .mt-15{
+      margin-top: 15px;
+    }
+    .countdown_section{
+      background-image: url("assets/background_count.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
+    .content_group{
+      margin: auto;
+      width: 100%;
+      text-align: center;
+    }
+    .header{
+      text-align: center;
+    }
+    .header_img{
+      width: 160px;
+      margin: auto;
+    }
+    .countdown{
+      display: flex;
+      margin-bottom: 80px;
+    }
+    .countdown_day{
+      background-image: url("assets/box_day.png");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 12px;
+      font-size: 32px;
+    }
+    .countdown_hour{
+      background-image: url("assets/box_hour.png");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 12px;
+      font-size: 32px;
+    }
+    .countdown_minute{
+      background-image: url("assets/box_minute.png");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 12px;
+      font-size: 32px;
+    }
+    .countdown_second{
+      background-image: url("assets/box_second.png");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 12px;
+      font-size: 32px;
+    }
+    .countdown_label{
+      color: yellow;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    .info{
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url(assets/background_info.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* height: 100px; */
+      width: 250px;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 9px;
+    }
+  </style>
+</head>
+<body onload="startTime()">
+  <div class="countdown_section">
+    <div class="content_group">
+      <div class="header">
+        <img src="assets/needle.png" class="header_img">
+      </div>
+      <div class="countdown">
+        <div class="m-auto mt-15">
+          <div id="day" class="countdown_day">21</div>
+          <div class="countdown_label">day</div>
+        </div>
+        <div class="m-auto mt-15">
+          <div id="hour" class="countdown_hour">21</div>
+          <div class="countdown_label">hour</div>
+        </div>
+        <div class="m-auto mt-15">
+          <div id="minute" class="countdown_minute">21</div>
+          <div class="countdown_label">minute</div>
+        </div>
+        <div class="m-auto mt-15">
+          <div id="second" class="countdown_second">21</div>
+          <div class="countdown_label">second</div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info_icon"></div>
+        <div class="info_primary">anda belum login</div>
+        <div class="info_secondary">silahkan login terlebih dahulu</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('hour').innerHTML = h;
+    document.getElementById('minute').innerHTML = m;
+    document.getElementById('second').innerHTML = s;
+    // h + ":" + m + ":" + s;
+    if(s == 59){
+      // window.location ="file:///C:/xampp/htdocs/luckywheel%20FIXED/gui.video.html";
+      window.location ="https://wilfriedandrews.github.io/gui.video.html";
+      // if(s == 03){
+      //   console.log("tada");
+      //   window.location ="file:///C:/xampp/htdocs/luckywheel%20FIXED/gui.video.html";
+      // }
+      // else{
+        
+      //   var t = setTimeout(startTime, 500);
+      // }
+    }else{
+      var t = setTimeout(startTime, 500);
+
+    }
+
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+
+  function xxx(){
+    set
+  }
+  </script>
+</body>
+</html>

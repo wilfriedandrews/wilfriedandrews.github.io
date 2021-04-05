@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+    }
+    .wa-dnone{
+      display: none;
+    }
+    .video_section{
+      background-image: url("assets/background_video.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
+    .content_group{
+      margin: auto;
+      width: 100%;
+      text-align: center;
+      padding-top: 30px;
+    }
+    .button_container:active > .button_custom{
+      transform: scale(0.7);
+      transition-duration: .7s;
+    }
+    .button_custom{
+      background-image: url("assets/button.png");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: auto;
+      width: 50%;
+      height: 55px;
+      display: flex;
+      transition-duration: .7s;
+    }
+    .button_label{
+      margin: auto;
+      font-weight: bold;
+      color: #2265B0;
+      font-size: 13px;
+    }
+    .button_label:after{
+      animation: loading 3s infinite;
+    }
+    .loading:after {
+  content: ' .';
+  animation: dots 1s steps(5, end) infinite;}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: rgb(34 101 176);;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 rgb(34 101 176),
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 rgb(34 101 176),
+      .5em 0 0 rgb(34 101 176);;}}
+
+  </style>
+</head>
+<body onload="skipped()">
+  <div class="video_section">
+    <div class="content_group">
+      <div class="video_container">
+        <video width="250" height="150" loop="true" autoplay="autoplay" controls muted>
+          <source src="assets/footage.mp4" type="video/mp4">
+          <source src="assets/footage.ogg" type="video/ogg">
+          Your browser does not support HTML video.
+        </video>
+      </div>
+      <div id="button_wait" onclick="spin()" class="button_container">
+        <div class="button_custom"><span class="button_label loading">Lucky wheel <br>sedang dipersiapkan</span></div>
+      </div>
+      <div id="button_spin" onclick="goTo()" class="button_container wa-dnone">
+        <div class="button_custom"><span class="button_label">Yuk Mulai Main</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function skipped() {
+      setInterval(() => {
+        document.getElementById("button_wait").style.display="none";
+        document.getElementById("button_spin").style.display="block";
+        
+      }, 5000);
+    }
+    function goTo(){
+      // window.location ="file:///C:/xampp/htdocs/luckywheel%20FIXED/gui.luckywheel.html";
+      window.location ="https://wilfriedandrews.github.io/gui.luckywheel.html";
+    }
+  </script>
+</body>
+</html>
