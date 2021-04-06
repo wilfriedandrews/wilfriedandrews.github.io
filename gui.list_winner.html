@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+    }
+    .wa-abs{
+      position: absolute;
+    }
+    .w-100{
+      width: 100%;
+    }
+    .wa-hidden{
+      visibility: hidden!important;
+    }
+    .wa-dnone{
+      display: none;
+    }
+    .list_winner_section{
+      background-image: url("assets/background_list_winner.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
+    .img_header{
+      width: 100%;
+    }
+    .list_container{
+      padding: 20px;
+      position: relative;
+      /* background-image: url("assets/list_container.png");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat; */
+    }
+    .names{
+      background-color: white;
+      width: 60%;
+      margin: auto;
+      padding: 15px;
+      color: #2265B0;
+      line-height: 1.8;
+      font-weight: bold;
+      z-index: 1;
+    position: relative;
+    }
+    .button_container{
+      position: relative;
+    }
+    .button_container:active > .button_custom{
+      transform: scale(0.7);
+      transition-duration: .7s;
+    }
+    .button_custom{
+      background-image: url("assets/button_blue.png");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: auto;
+      width: 50%;
+      height: 55px;
+      display: flex;
+      transition-duration: .7s;
+    }
+    .button_label{
+      margin: auto;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .names_background{
+      width: 100%;
+      position: absolute;
+    top: 0;
+    z-index: 0;
+    left: -10%;
+    }
+  </style>
+</head>
+<body>
+  <div class="list_winner_section">
+    <div class="content_group">
+      <div class="img_header_container">
+        <img src="assets/img_header.png" class="img_header"/>
+      </div>
+      <div class="list_container">
+        <img src="assets/list_container.png" class="names_background"/>
+        <div class="names">
+          <div>1.John Doe</div>
+          <div>2.John Doe</div>
+          <div>3.John Doe</div>
+          <div>4.John Doe</div>
+          <div>5.John Doe</div>
+          <div>6.John Doe</div>
+          <div>7.John Doe</div>
+          <div>8.John Doe</div>
+        </div>
+      </div>
+      <div onclick="" class="button_container">
+        <div class="button_custom"><span class="button_label">Keluar</span></div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
